@@ -1,27 +1,5 @@
-import {printToDom} from './helpers/util.js';
-import {multiply} from './helpers/maths.js';
+import {calculate} from '../javascripts/components/calculator.js'
 
-const calculate = (num1, num2, mathType) => {
-    let answer = 0;
-    switch(mathType){
-        case 'multiply':
-            answer = multiply(num1, num2);
-            break;
-        case 'divide':
-            answer = num1 / num2
-            break;
-        case 'add':
-            answer = num1 + num2
-            break;
-        case 'subtract':
-            answer = num1 - num2
-            break;
-        default:
-            answer = 'nope';
-    }
+// calculate(422, 121, 'multiply')
 
-    printToDom(answer, 'result')
-}
-
-calculate(2, 10, 'multiply')
-
+calculate (40, 10, 'multiply')
